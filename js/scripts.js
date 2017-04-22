@@ -1,21 +1,17 @@
-var a = prompt('Podaj podstawe trojkata:'),
-    h = prompt('Podaj wysokosc trojkata:');
-var triangleArea = a * h / 2;
-document.write('Pole trójkąta o podstawie a: ' + a + ' i wysokości h: ' + h + ' wynosi: ' + triangleArea);
-console.log('Pole trójkąta o podstawie a: ' + a + ' i wysokości h: ' + h + ' wynosi: ' + triangleArea);
+var a = prompt('Podaj a:'),
+    b = prompt('Podaj b:');
+var value = (a * a) + (2 * a * b) - (b * b);
 
-var a_canvas = document.getElementById("a");
-var context = a_canvas.getContext("2d");
+document.write('Wynik: ' + value);
+console.log('Wynik: ' + value);
 
-context.beginPath();
-context.moveTo(100, 100);
-context.lineTo(100, 300);
-context.lineTo(300, 300);
-context.closePath();
-
-context.lineWidth = 10;
-context.strokeStyle = '#666666';
-context.stroke();
-
-context.fillStyle = "#FFCC00";
-context.fill();
+if (value == 0) {
+    document.write('Wynik jest rowny 0');
+    console.log('Wynik jest rowny 0');
+} else if (value > 0) {
+    document.write('Wynik DODATNI');
+    console.log('Wynik DODATNI');
+} else {
+    document.write('Wynik UJEMNY');
+    console.log('Wynik UJEMNY');
+}
