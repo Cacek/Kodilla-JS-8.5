@@ -12,6 +12,6 @@
   "author": "Cacek",
   "license": "ISC",
   "devDependencies": {
-	"grunt-contrib-jshint": "^1.1.0",
+	"grunt-contrib-jshint": "^1.1.0"
   }
 }
